@@ -1,13 +1,13 @@
-jQuery(function($) {
-    $(window).scroll(function(){
-        if($(this).scrollTop()>140){
-            $('#navigation').addClass('fixed');
-        }
-        else if ($(this).scrollTop()<140){
-            $('#navigation').removeClass('fixed');
-        }
-    });
-});
+// jQuery(function($) {
+//     $(window).scroll(function(){
+//         if($(this).scrollTop()>140){
+//             $('#navigation').addClass('fixed');
+//         }
+//         else if ($(this).scrollTop()<140){
+//             $('#navigation').removeClass('fixed');
+//         }
+//     });
+// });
 
 const anchors = document.querySelectorAll('.button a')
 
@@ -23,3 +23,25 @@ for (let anchor of anchors) {
         })
     })
 }
+
+
+const header = document.querySelector('.header__info'); //получаем элемент над меню, для для получения его высоты
+console.log(header);
+const headerHeight = header.offsetHeight;// получаем высоту элемента на меню
+const menu = document.querySelector('.header__menu');// получае мэлемент с меню
+const menuHeight = menu.offsetHeight; //получаем высоту меню
+const underMenu = document.querySelector('.baner')// получаем элемент под меню
+
+function fixmenu() {
+    let scrollDistanse = window.scrollY;
+    if (scrollDistanse <= headerHeight) {
+        menu.classList.remove ( 'fixed' );
+        underMenu.style.marginTop = "0";
+    }
+    else{
+        menu.classList.add('fixed');
+        underMenu.style.marginTop = menuHeight+"px";
+    }
+}
+
+window.addEventListener('scroll', fixmenu);
