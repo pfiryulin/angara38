@@ -1,0 +1,79 @@
+@media (max-width: 992px) {
+
+  .header__info  {
+      flex-direction: column;
+      height: auto;
+      padding-bottom: 5px;
+  }
+
+    .header__info-info, .header__info-contacts{
+        width: 100%;
+        margin-top: 5px;
+    }
+    .main__baner{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .baner .main__baner-title{
+        display: none;
+    }
+
+    .baner .main__baner-info{
+        color: #fff;
+        font-size: 3vh;
+        margin-top: 4vh;
+    }
+    .button{
+        width: 50vw;
+        height: 5vh;
+        font-size: 2vh;
+    }
+
+    .trust-resons{
+        font-size: 2.5vh;
+        line-height: 3vh;
+    }
+
+    .trust-title {
+        font-size: 3vh;
+    }
+
+    .order{
+        font-size: 2.5vh;
+        padding: 30px;
+    }
+
+    h3{
+        font-size: 3vh;
+    }
+
+    .order img{
+        width: 2vh;
+        height: auto;
+    }
+
+   .callbacksection{
+       /*height: 120px;*/
+       height: 50vh;
+       /*padding: 50px 0;*/
+   }
+
+    .footer__product{
+        display: none;
+    }
+    .footer__info{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__info-info, .footer__info-contacts{
+        width: 100%;
+    }
+
+    .footer__info-info span{
+        display: block;
+        margin: 0;
+    }
+}
