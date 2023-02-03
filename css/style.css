@@ -78,6 +78,7 @@ h1{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .header__menu>ul>li{
@@ -87,6 +88,10 @@ h1{
 
 .header__menu a{
     color: black;
+}
+
+.burger{
+    display: none;
 }
 
 /*Header end*/

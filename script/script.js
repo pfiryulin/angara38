@@ -32,12 +32,12 @@ function fixmenu() {
     }
 }
 
-// window.addEventListener('scroll', fixmenu);
+window.addEventListener('scroll', fixmenu);
 
 // alert(document.documentElement.clientWidth);
-if (document.documentElement.clientWidth <= 920){
-    menu.style.display = "none";
-    }
-    else{
-        window.addEventListener('scroll', fixmenu);
-    }
+// if (document.documentElement.clientWidth <= 920){
+//     menu.style.display = "none";
+//     }
+//     else{
+//         window.addEventListener('scroll', fixmenu);
+//     }
