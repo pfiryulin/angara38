@@ -1,5 +1,56 @@
 @media (max-width: 414px) {
     .header__info{
-        
+        font-size: 16px;
     }
+
+    .logo{
+        width: 82px;
+        height: 82px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+  
+
+    .header__info-info, .header__info-contacts{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .main__baner{
+        height: 641px;
+    }
+
+    .baner .main__baner-info{
+        color: #fff;
+        font-size: 30px;
+        margin-top: 100px;
+        padding-left: 100px;
+        width: 100%;
+    }
+
+    .baner{
+        background: url(../images/backgroundbaner414.png);
+        background-size: cover;
+    }
+
+    .button{
+        width: 81%;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .main__buner-button{
+        margin: 100px auto;
+    }
+
+    .trust{
+        background:url(../images/backgroundtrust414.png);
+        background-size: cover;
+    }
+
+    .trust-resons{
+        font-size: 20px;
+        line-height: 40px;
 }

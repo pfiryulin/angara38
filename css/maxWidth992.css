@@ -76,6 +76,9 @@
         width: 65vw;
         height: 90px;
         font-size: 45px;
+    }
+
+    .main__buner-button{
         margin: 50px auto;
     }
 
