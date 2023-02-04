@@ -111,6 +111,22 @@
        padding: 50px 0;
    }
 
+   .productcard{
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 200px 1fr;
+    margin-bottom: 30px;
+    min-width: 600px;
+   }
+
+   .productcard:last-child{
+    margin-bottom: 0;
+   }
+
+   .productcard__img{
+    width: 20vw;
+    height: 200px;
+   }
+
     .footer__product{
         display: none;
     }
