@@ -11,6 +11,10 @@
     h1{
         font-size: 16px;
     }
+
+    h3{
+        font-size: 30px;
+    }
   
 
     .header__info-info, .header__info-contacts{
@@ -53,4 +57,36 @@
     .trust-resons{
         font-size: 20px;
         line-height: 40px;
-}
+    }
+    .order{
+        font-size: 20px;
+        column-gap: 14vw;
+    }
+    .order h3{
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .order img{
+        
+        max-width: 65px;
+    }
+
+    .callbacksection{
+        font-size: 20px;
+        text-align: center;
+        height: 434px;
+    }
+
+    .callbacksection input{
+        width: 81vw;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .footer__info{
+        font-size: 20px;
+    }
+
+
+    }
