@@ -34,7 +34,7 @@ a{
 /*Header start*/
 
 .header__info{
-    height: 150px;
+    height: 12vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -202,8 +202,12 @@ h3{
 }
 
 .order img{
-    width: 5vw;
+    /* width: 5vw; */
     height: auto;
+}
+
+.order span{
+    padding-left: 10px;
 }
 
 .callbacksection{
