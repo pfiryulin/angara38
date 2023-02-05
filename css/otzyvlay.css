@@ -68,9 +68,7 @@ h1{
     width: 100%;
     height: 80px;
     background: var(--color-section);
-    /*position: fixed;*/
-    /*top: 150px;*/
-    /*z-index: 1;*/
+    font-size: 20px;
 }
 
 .header__menu ul{
@@ -114,22 +112,22 @@ h1{
 
 .baner .main__baner-title{
     color: #fff;
-    font-size: 3.5vw;
-    width: 50%;
-    text-align: right;
-    margin: 5vw 6% 100px 0;
+    font-size: 50px;
+    width: 686px;
+    text-align: left;
+    margin: 5vw 150px 100px 0;
 }
 
-.main__baner-title h3{
-    font-size: 50px;
-}
+/*.main__baner-title h3{*/
+/*    font-size: 50px;*/
+/*}*/
 
 .baner .main__baner-info{
-    width: 60%;
-    font-size: 30px;
+    width: 860px;
+    font-size: 40px;
     text-align: right;
     font-weight: 700;
-    margin-right: 3%;
+    margin-right: 35px;
 }
 
 .main__buner-button{
@@ -201,7 +199,7 @@ h1{
 }
 
 h3{
-    font-size: 2vw;
+    /*font-size: 2vw;*/
 }
 
 .order img{
@@ -333,9 +331,27 @@ footer a{
         width: 50%;
         text-align: center;
     }
+
+    .baner .main__baner-info{
+        width: 60%;
+        font-size: 30px;
+        text-align: right;
+        font-weight: 700;
+        margin-right: 3%;
+    }
+
+    .baner .main__baner-info{
+        width: calc(350px + (860 - 350) * ((100vw - 414px) / ( 1200 - 414)));
+        font-size: calc(30px + (40 - 30) * ((100vw - 414px) / ( 1200 - 414)));
+                /*40px;*/
+        text-align: right;
+        font-weight: 700;
+        margin-right: calc(24px + (35 - 24) * ((100vw - 414px) / ( 1200 - 414)))
+                /*35px;*/
+    }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 992px) {
     .header__info  {
         flex-direction: column;
         height: auto;
@@ -352,5 +368,16 @@ footer a{
     }
     .baner .main__baner-title{
         display: none;
+    }
+
+    .baner .main__baner-info{
+        color: white;
+    }
+
+}
+
+@media (max-width: 414px) {
+    .baner{
+        url(..//images/background414.png);
     }
 }

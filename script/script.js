@@ -22,14 +22,15 @@ const underMenu = document.querySelector('.baner')// получаем элеме
 
 function fixmenu() {
     let scrollDistanse = window.scrollY;
-    if (scrollDistanse <= headerHeight) {
-        menu.classList.remove ( 'fixed' );
-        underMenu.style.marginTop = "0";
-    }
-    else{
-        menu.classList.add('fixed');
-        underMenu.style.marginTop = menuHeight+"px";
-    }
+      if(document.documentElement.clientWidth>992) {
+          if (scrollDistanse <= headerHeight) {
+              menu.classList.remove ( 'fixed' );
+              underMenu.style.marginTop = "0";
+          } else {
+              menu.classList.add ( 'fixed' );
+              underMenu.style.marginTop = menuHeight + "px";
+          }
+      }
 }
 
 window.addEventListener('scroll', fixmenu);
