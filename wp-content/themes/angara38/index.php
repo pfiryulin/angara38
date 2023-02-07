@@ -1,0 +1,154 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <?php
+        wp_head();
+    ?>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <div class="header__info">
+        <div class="logo">
+            <img src="<?php echo bloginfo('template_url')?>/assets/images/logo.png" alt="">
+        </div>
+        <div class="header__info-info">
+            <h1>Продажа и доставка инертных материалов.</h1>
+            <span>Работаем  без выходных 8:00-18:00</span>
+        </div>
+        <div class="header__info-contacts">
+            <a href="">8(924)60-80-779</a><br>
+            <a href="">8(914)89-18-459</a><br>
+            <a href="">8(902)76-26-326</a>
+        </div>
+        <div class="burger">
+            <span>  </span>
+        </div>
+    </div>
+
+    <div class="header__menu" id="navigation">
+        <ul>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Песок</a></li>
+            <li><a href="">ПГС</a></li>
+            <li><a href="">Отсев</a></li>
+            <li><a href="">Щебень</a></li>
+            <li><a href="">Откат</a></li>
+            <li><a href="">Плитняк</a></li>
+            <li><a href="">Чернозем</a></li>
+            <li><a href="">Перегной</a></li>
+            <li><a href="">Грунт</a></li>
+            <li><a href="">Уголь</a></li>
+            <li><a href="">Вывоз снега</a></li>
+            <li><a href="">Вывоз мусора</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <section class="main__baner baner">
+        <div class="main__baner-title">
+            <h3>   Продажа и доставка
+                НЕРУДНЫХ МАТЕРИАЛОВ
+            </h3>
+        </div>
+        <div class="main__baner-info">
+            Мы доставим все виды сыпучих материалов. Точно в договоренные сроки, по самым выгодным ценам, весь заявленный объем.
+        </div>
+        <div class="main__buner-button button">
+            <a href="#callback">Заказать звонок</a>
+        </div>
+    </section>
+    <section class="main__baner trust">
+        <h3 class="trust-title">Нам доверяют потому что:</h3>
+        <div class="main__baner-info trust-resons">
+            <ul>
+                <li><span>Мы более</span> 10<span> Лет на рынке грузоперевозок.</span></li>
+                <li><span>У нас более </span>5000<span> Довольных клиентов.</span></li>
+                <li><span>Мы пунктуальны и честны.</span></li>
+                <li><span>Наши сотрудники обладают богатым опытом.</span></li>
+                <li><span>Вся продукция соответствует </span>ГОСТ</li>
+                <li><span>Доставляем </span>от 1 до 25<span> тонн</span></li>
+            </ul>
+        </div>
+    </section>
+    <section class="order">
+        <h3>Как заказать?</h3>
+        <img src="<?php echo bloginfo('template_url')?>/assets/images/phone_black.png" alt="">
+        <span>Свяжитесь с нами</span>
+
+        <img src="<?php echo bloginfo('template_url')?>/assets/images/manager.png" alt="">
+        <span>Наш менеджер подробно проконсультирует о сроках доставки и выставит счет</span>
+
+        <img src="<?php echo bloginfo('template_url')?>/assets/images/invoice.png" alt="">
+        <span>Оплатите счет</span>
+
+
+        <img src="<?php echo bloginfo('template_url')?>/assets/images/truck.png" alt="">
+        <span>Дождитесь доставки и примите груз</span>
+
+    </section>
+    <section class="callbacksection" id="callback">
+        <h3>Позвоните нам</h3>
+
+        <div class="button">
+            <a href=""> 8(924)-60-80-779 </a>
+        </div>
+
+        <h3>Или оставьте заявку и мы свяжемся с вами</h3>
+        <input type="text" placeholder="Ваш номер телефона">
+        <div class="button">
+            Оставить заявку
+        </div>
+    </section>
+</main>
+<footer>
+    <section class="footer__product">
+        <ul>
+            <li><a href="">Песок</a></li>
+            <li><a href="">ПГС</a></li>
+            <li><a href="">Отсев</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Щебень</a></li>
+            <li><a href="">Откат</a></li>
+            <li><a href="">Плитняк</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Чернозем</a></li>
+            <li><a href="">Перегной</a></li>
+            <li><a href="">Грунт</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Уголь</a></li>
+            <li><a href="">Вывоз снега</a></li>
+            <li><a href="">Вывоз мусора</a></li>
+        </ul>
+    </section>
+    <section class="footer__info">
+        <div class="logo">
+            <img src="<?php echo bloginfo('template_url')?>/assets/images/logo.png" alt="">
+        </div>
+        <div class="footer__info-info">
+            <span>Продажа и доставка инертных маетриалов.</span>
+            <span>Работаем  без выходных 8:00-18:00</span>
+        </div>
+        <div class="footer__info-contacts">
+            <a href="">8(924)60-80-779</a><br>
+            <a href="">8(914)89-18-459</a><br>
+            <a href="">8(902)76-26-326</a>
+        </div>
+    </section>
+</footer>
+<?php
+    wp_footer();
+?>
+?>
+</body>
+</html>
