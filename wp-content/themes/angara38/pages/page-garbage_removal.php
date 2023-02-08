@@ -1,4 +1,9 @@
-<?php get_header() ?>
+<?php
+/*
+Template Name: Вывоз мусора
+*/
+
+get_header() ?>
     <section class="prioduct__info">
         <div class="productcard">
             <div class="productcard__img">

@@ -1,4 +1,10 @@
-<?php get_header() ?>
+<?php
+
+/*
+Template Name: Щебень
+*/
+
+get_header() ?>
 <section class="prioduct__info">
     <div class="productcard">
         <div class="productcard__img">
