@@ -1,17 +1,16 @@
 <?php
+
 /*
-
-Template Name: Гумус
+Template Name: Щебень
 */
-?>
 
-<?php get_header() ?>
+get_header() ?>
 <main>
     <?php
     // параметры по умолчанию
     $phonenumber = get_posts( array(
         'numberposts' => -1,
-        'category_name'    => 'humus',
+        'category_name'    => 'crushed_stone',
         'orderby'     => 'date',
         'order'       => 'DESC',
         'post_type'   => 'post',

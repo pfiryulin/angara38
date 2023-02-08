@@ -4,56 +4,48 @@ Template Name: Грунт
 */
 
 get_header() ?>
-<section class="prioduct__info">
-    <div class="productcard">
-        <div class="productcard__img">
-            <img src="images/riversand.jpg" alt="">
-        </div>
-        <h3>Песок речной</h3>
-        <div class="productcard__description">
-            Краткое описание товара
-        </div>
+<main>
+    <?php
+    // параметры по умолчанию
+    $phonenumber = get_posts( array(
+        'numberposts' => -1,
+        'category_name'    => 'ground',
+        'orderby'     => 'date',
+        'order'       => 'DESC',
+        'post_type'   => 'post',
+        'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+    ) );
 
-        <div class="productcard__coast">
-            от 700 р/тонна + доставка
+    global $post;
+
+    foreach( $phonenumber as $post ){
+        setup_postdata( $post );
+
+        $image = get_field('product_img');
+        // формат вывода the_title() ...
+        ?>
+        <div class="productcard">
+            <div class="productcard__img">
+                <img src="<?php echo $image['url'] ?>" alt="<?= $image['alt'] ?>">
+            </div>
+            <h3><?php the_title(); ?></h3>
+            <div class="productcard__description">
+                <?php the_field('product_descript'); ?>
+            </div>
+
+            <div class="productcard__coast">
+                <?php the_field('product_coast'); ?>
+            </div>
+
+            <div class="productcard__button button">
+                <a href="#callback">Заказать</a>
+            </div>
+
         </div>
+        <?php
+    }
 
-        <div class="productcard__button button">
-            <a href="#callback">Заказать</a>
-        </div>
+    wp_reset_postdata(); // сброс
 
-    </div>
-    <div class="productcard">
-        <div class="productcard__img">
-            <img src="images/riversand.jpg" alt="">
-        </div>
-        <h3>Песок речной</h3>
-        <div class="productcard__description">
-            Краткое описание товара
-        </div>
-
-        <div class="productcard__coast">
-            от 700 р/тонна + доставка
-        </div>
-
-        <div class="productcard__button button">
-            <a href="#callback">Заказать</a>
-        </div>
-
-    </div>
-</section>
-<section class="callbacksection" id="callback">
-    <h3>Позвоните нам</h3>
-
-    <div class="button">
-        <a href=""> 8(924)-60-80-779 </a>
-    </div>
-
-    <h3>Или оставьте заявку и мы свяжемся с вами</h3>
-    <input type="text" placeholder="Ваш номер телефона">
-    <div class="button">
-        Оставить заявку
-    </div>
-</section>
-</main>
+    ?>
 <?php get_footer() ?>

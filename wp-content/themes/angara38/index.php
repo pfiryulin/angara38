@@ -45,47 +45,7 @@
         <span>Дождитесь доставки и примите груз</span>
 
     </section>
-    <section class="callbacksection" id="callback">
-        <h3>Позвоните нам</h3>
-            <?php
-                // параметры по умолчанию
-                    $phon = get_posts( array(
-                        'numberposts' => -1,
-                        'category_name'    => 'phonenumbers',
-                        'orderby'     => 'date',
-                        'order'       => 'DESC',
-                        'post_type'   => 'post',
-                        'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
-                    ) );
-                    $post_id;
 
-                    global $post;
-
-                    foreach( $phon as $post ){
-                        setup_postdata( $post );
-                        $on_phonenumb_btn = get_field('phone_button');
-                        if($on_phonenumb_btn == 'on'){
-                            $post_id = $post->ID;
-                        }
-
-                    }
-
-                    wp_reset_postdata(); // сброс
-
-                        $phonenumb_btn = get_post($post_id, ARRAY_A);
-                        $title = $phonenumb_btn ['post_title'];
-
-                ?>
-
-        <div class="button">
-            <a href="tel:<?= $title ?>"><?= $title ?> </a>
-        </div>
-
-        <h3>Или оставьте заявку и мы свяжемся с вами</h3>
-        <?php
-            echo do_shortcode('[contact-form-7 id="59" title="Contact form 1"]');
-        ?>
-    </section>
 </main>
 <?php
     get_footer();
