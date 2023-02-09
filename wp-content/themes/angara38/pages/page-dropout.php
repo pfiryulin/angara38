@@ -5,9 +5,10 @@ Template Name: Отсев
 
 get_header() ?>
     <main>
+    <section class="product__info">
         <?php
         // параметры по умолчанию
-        $phonenumber = get_posts( array(
+        $products = get_posts( array(
             'numberposts' => -1,
             'category_name'    => 'dropout',
             'orderby'     => 'date',
@@ -18,7 +19,7 @@ get_header() ?>
 
         global $post;
 
-        foreach( $phonenumber as $post ){
+        foreach( $products as $post ){
             setup_postdata( $post );
 
             $image = get_field('product_img');
@@ -48,5 +49,6 @@ get_header() ?>
         wp_reset_postdata(); // сброс
 
         ?>
+    </section>
 
 <?php get_footer() ?>

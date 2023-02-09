@@ -23,8 +23,7 @@
             <?php the_custom_logo(); ?>
         </div>
         <div class="header__info-info">
-<!--            <h1>Продажа и доставка инертных материалов.</h1>-->
-<!--            <span>Работаем  без выходных 8:00-18:00</span>-->
+
             <h1><?php the_field('header_title', 13);?></h1>
             <span><?php the_field('header_subtitle', 13); ?></span>
         </div>
@@ -32,7 +31,7 @@
         <?php
             // параметры по умолчанию
             $phonenumber = get_posts( array(
-            'numberposts' => 5,
+            'numberposts' => -1,
             'category_name'    => 'phonenumbers',
             'orderby'     => 'date',
             'order'       => 'DESC',
@@ -64,22 +63,12 @@
         <?php
 
             wp_nav_menu( [
-//                'theme_location'  => '',
                 'menu'            => 'Main',
                 'container'       => false,
-//                'container_class' => '',
-//                'container_id'    => '',
-//                'menu_class'      => 'menu',
-//                'menu_id'         => '',
                 'echo'            => true,
                 'fallback_cb'     => 'wp_page_menu',
-//                'before'          => '',
-//                'after'           => '',
-//                'link_before'     => '',
-//                'link_after'      => '',
                 'items_wrap'      => '<ul>%3$s</ul>',
                 'depth'           => 1,
-//                'walker'          => '',
             ] );
 
         ?>

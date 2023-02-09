@@ -42,6 +42,20 @@
 </main>
 <footer>
     <section class="footer__product">
+
+        <?php
+
+//        wp_nav_menu( [
+//            'menu'            => 'footer',
+//            'container'       => false,
+//            'echo'            => true,
+//            'fallback_cb'     => 'wp_page_menu',
+//            'items_wrap'      => '<ul>%3$s</ul>',
+//            'depth'           => 1,
+//        ] );
+
+        ?>
+
         <ul>
             <li><a href="">Песок</a></li>
             <li><a href="">ПГС</a></li>
